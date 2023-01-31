@@ -151,6 +151,26 @@ body{
 
 /*Barra de carrito*/
 
-#nav-carrito{
+#area-carrito{
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#carrito-container{
+    width: 600px;
+    background-color: #000000;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carrito-container a{
+    color: #E2CA1D;
+    font-size: 28px;
+    width: 35px;
+    padding: 0px;
 }
