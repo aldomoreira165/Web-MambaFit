@@ -79,7 +79,6 @@ function cargarProductos() {
         contenedorProductos.append(div);
     })
     actualizarBotonesAgregar();
-    console.log(botonesAgregar);
 }
 
 cargarProductos();
@@ -92,22 +91,31 @@ function actualizarBotonesAgregar() {
     });
 }
 
-function agregarAlCarrito() {
-    Swal.fire({
-        title: '¿Estás seguro de agregar este producto al carrito de compras?',
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonColor: '#329413',
-        cancelButtonColor: '#A31919',
-        confirmButtonText: 'Sí, estoy seguro',
-        cancelButtonText: 'No'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
-            '¡Producto agregado correctamente!',
-            'Puedes verificarlo en el carrito de compras.',
-            'success'
-          )
-        }
-      })
+/*Arreglo de productos agregados*/
+const productosEnCarrito = [];
+
+/*Agregando los productos al arreglo de carrito*/
+function agregarAlCarrito(e) {
+    animacionProductoAgregado();
+    const idBoton = e.currentTarget.id;
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+
+    if(productosEnCarrito.some(producto => producto.id === idBoton)){
+        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+        productosEnCarrito[index].cantidad++;
+    }else{
+        productoAgregado.cantidad = 1;
+        productosEnCarrito.push(productoAgregado)
+    }
+    localStorage.setItem('productos-en-carrito', JSON.stringify(productosEnCarrito));
 }
+
+/*Animaciones*/
+function animacionProductoAgregado(){
+    Swal.fire(
+        '¡Producto agregado correctamente!',
+        'Puedes verificarlo en el carrito de compras.',
+        'success'
+    )
+}
+
