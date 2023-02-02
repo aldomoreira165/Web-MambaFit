@@ -177,3 +177,37 @@ body{
 }
 
 /*Estilos de pagina carrito de compras*/
+#tarjeta-producto-carrito{
+    height: 200px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+}
+
+#cuerpo-imagen-producto{
+    width: 180px;
+    height: 180px;
+    margin: 20px 0px;
+}
+
+#cuerpo-tarjeta-carrito{
+    height: 200px;
+    background-color: #000000;
+    color:#E2CA1D;
+}
+
+#cuerpo-eliminar-producto{
+    height: 200px;
+    background-color: #E2CA1D;
+    display: flex;
+    justify-content: center;
+}
+
+#cuerpo-eliminar-producto a{
+    font-size: 50px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
