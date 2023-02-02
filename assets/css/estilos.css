@@ -147,6 +147,7 @@ body{
 #btn-container a{
     background-color: #E2CA1D;
     color: #000000;
+    margin: 8px;
 }
 
 /*Barra de carrito*/
@@ -174,3 +175,5 @@ body{
     width: 35px;
     padding: 0px;
 }
+
+/*Estilos de pagina carrito de compras*/

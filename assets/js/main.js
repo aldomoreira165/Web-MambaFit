@@ -71,6 +71,9 @@ function cargarProductos() {
                     <p id="texto-producto" class="card-text">${producto.detalle}</p>
                     <p id="texto-producto" class="card-text">Precio: Q${producto.precio}</p>
                     <div id="btn-container">
+                        <a id="detalle-producto" class="btn">Detalle de producto</a>
+                    </div> 
+                    <div id="btn-container">
                         <a id="${producto.id}" class="btn producto-agregar">Agregar al carrito de compras</a>
                     </div> 
                 </div>
@@ -92,7 +95,13 @@ function actualizarBotonesAgregar() {
 }
 
 /*Arreglo de productos agregados*/
-const productosEnCarrito = [];
+let productosEnCarrito;
+const productosEnCarritoLS = JSON.parse(localStorage.getItem('productos-en-carrito'));
+if(productosEnCarritoLS){
+    productosEnCarrito = productosEnCarritoLS;
+}else{
+    productosEnCarrito = [];
+}
 
 /*Agregando los productos al arreglo de carrito*/
 function agregarAlCarrito(e) {
