@@ -179,15 +179,9 @@ body{
 /*Estilos de pagina carrito de compras*/
 #tarjeta-producto-carrito{
     height: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 30% 60% 10%;
-}
-
-#cuerpo-imagen-producto{
-    width: 180px;
-    height: 180px;
-    margin: 20px 0px;
+    grid-template-columns: 80% 20%
 }
 
 #cuerpo-tarjeta-carrito{
@@ -209,5 +203,9 @@ body{
     display: flex;
     align-items: center;
     text-decoration: none;
+}
+
+#cuerpo-eliminar-producto a:hover{
+    cursor: pointer;
 }
 
