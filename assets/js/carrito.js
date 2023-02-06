@@ -7,7 +7,8 @@ const contenedorCarritoAcciones = document.querySelector('#acciones-carrito-cont
 let botonesEliminar = document.querySelectorAll('.carrito-producto-eliminar');
 
 function cargarProductosCarrito(){
-    if (productosEnCarrito) {
+    if (productosEnCarrito && productosEnCarrito.length > 0) {
+
         contenedorCarritoVacio.classList.add('disabled');
         contenedorCarritoProductos.classList.remove('disabled');
         contenedorCarritoAcciones.classList.remove('disabled');
@@ -58,4 +59,5 @@ function eliminarDelCarrito(e){
 
     localStorage.setItem('productos-en-carrito', JSON.stringify(productosEnCarrito));
 }
+
 

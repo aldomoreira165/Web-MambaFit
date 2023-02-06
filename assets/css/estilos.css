@@ -209,3 +209,17 @@ body{
     cursor: pointer;
 }
 
+/*etiqueta que indica que el carrito está vacío*/
+#carrito-vacio{
+    height: 60px;
+    background-color: #000000;
+    color: #E2CA1D;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Clase para ocultar elementos*/
+.disabled{
+    display: none;
+}
+
