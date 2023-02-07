@@ -211,15 +211,54 @@ body{
 
 /*etiqueta que indica que el carrito está vacío*/
 #carrito-vacio{
-    height: 60px;
+    height: 40px;
     background-color: #000000;
     color: #E2CA1D;
-    font-size: 20px;
-    text-align: center;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Estilos de area de acciones de compra*/
+#acciones-carrito-container {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+#acciones-carrito-container #boton-vaciar{
+    background-color: #E2CA1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#acciones-carrito-container #carrito-acciones-total{
+    background-color: #000000;
+    color: #E2CA1D;
+}
+
+#acciones-carrito-container #carrito-acciones-total p{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+#acciones-carrito-container #boton-comprar{
+    background-color: #E2CA1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#acciones-carrito-container a{
+    text-decoration: none;
+    color: #000000;
 }
 
 /*Clase para ocultar elementos*/
 .disabled{
-    display: none;
+    visibility: hidden;
 }
 
