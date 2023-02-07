@@ -59,28 +59,43 @@
                     </nav>
                 </div>
             </div>
-            <div id="area-compra-carrito" class="col-12">
-                <p id="carrito-vacio" class="col-12">¡Tu carrito de compras está vacío!</p>
-                <div id="productos-carrito-container" class="row">
-                    <!-- Area donde se agregaran los productos del carrito dinamicamente -->
+            <div id="area-carrito" class="col-12">
+                <div id="carrito-container" class="row">
+                    <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
                 </div>
-                <div id="acciones-carrito-container" class="col-12">
-                    <div id="boton-vaciar"  class="col-12">
-                        <a href="">Vaciar carrito</a>
-                    </div>
-                    <div id="carrito-acciones-total">
-                        <p>Total</p>
-                        <p id="total">3000</p>
-                    </div>
-                    <div id="boton-comprar">
-                        <a id="carrito-acciones-comprar" href="formulario-compra.html">Comprar ahora</a>
-                    </div>
-                </div>
+            </div>
+            <div id="area-formulario" class="col-12">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nameInput">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="emailInput">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">Número de teléfono</label>
+                            <input type="tel" class="form-control" id="telInput">
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="direccionInput">
+                        </div>
+                        <div class="mb-3">
+                            <label for="detalle" class="form-label">Detalle de compra</label>
+                            <input type="text" class="form-control" id="detalleInput" readonly>
+                        </div>
+                        <div id="area-formulario-boton">
+                            <button type="submit" class="btn">Enviar</button>
+                        </div>
+                    </form>
             </div>
         </div>
     </div>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

@@ -262,3 +262,29 @@ body{
     visibility: hidden;
 }
 
+/*formulario*/
+
+#area-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#area-formulario form{
+    background-color: #000000;
+    color: #E2CA1D;
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#area-formulario form button{
+    background-color: #E2CA1D;
+    color: #000000;
+    width: 150px;
+}
+
+#area-formulario-boton{
+    display: flex;
+    justify-content: center;
+}
