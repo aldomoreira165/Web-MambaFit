@@ -205,10 +205,6 @@ body{
     text-decoration: none;
 }
 
-#cuerpo-eliminar-producto a:hover{
-    cursor: pointer;
-}
-
 /*etiqueta que indica que el carrito está vacío*/
 #carrito-vacio{
     height: 40px;
@@ -278,7 +274,7 @@ body{
     padding: 10px;
 }
 
-#area-formulario form button{
+#area-formulario form a{
     background-color: #E2CA1D;
     color: #000000;
     width: 150px;

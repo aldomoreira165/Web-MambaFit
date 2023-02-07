@@ -11,7 +11,7 @@ listaProductos.forEach(producto => {
     Precio: ${producto.precio} 
     Subtotal: Q${(producto.precio * producto.cantidad).toFixed(2)}
    `
-   totalCompra += producto.precio * producto.cantidad
+    totalCompra += producto.precio * producto.cantidad
 });
 
 textoCompra += `\n    Total: Q${totalCompra.toFixed(2)}`;
@@ -20,12 +20,25 @@ detalleCompra.value = textoCompra;
 
 botonEnviar.addEventListener('click', realizarCompra);
 
-function realizarCompra(){
-    Swal.fire(
-        '¡Tu compra está casi lista!',
-        'Espera un segundo...',
-        'success'
-    )
+function realizarCompra() {
+
+    //mensaje de whatsapp
+    let nombreInput = document.querySelector('#nameInput');
+    let emailInput = document.querySelector('#emailInput');
+    let telInput = document.querySelector('#telInput');
+    let direccionInput = document.querySelector('#direccionInput');
+    let detalleInput = document.querySelector('#detalleInput');
+
+    let mensaje = `Buen día, mis datos de pedido son los siguientes: 
+    Nombre: ${nombreInput.value}\n
+    Correo electrónico: ${emailInput.value}\n
+    Número de teléfono: ${telInput.value}\n
+    Dirección de envío: ${direccionInput.value}\n
+    Detalle de pedido: ${detalleInput.value}\n
+    `
+    botonEnviar.setAttribute('href', `https://wa.me/50348503?text=${mensaje}`)
+
     listaProductos.length = 0;
     localStorage.setItem('productos-en-carrito', JSON.stringify(listaProductos));
 };
+
