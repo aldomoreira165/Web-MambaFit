@@ -288,3 +288,9 @@ body{
     display: flex;
     justify-content: center;
 }
+
+#area-formulario #area-detalle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

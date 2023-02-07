@@ -82,9 +82,9 @@
                             <label for="direccion" class="form-label">Dirección</label>
                             <input type="text" class="form-control" id="direccionInput">
                         </div>
-                        <div class="mb-3">
-                            <label for="detalle" class="form-label">Detalle de compra</label>
-                            <input type="text" class="form-control" id="detalleInput" readonly>
+                        <label for="detalle" class="form-label">Detalle compra</label>
+                        <div class="mb-3" id="area-detalle">
+                            <textarea name="detalle" id="detalleInput" cols="30" rows="10" readonly></textarea>
                         </div>
                         <div id="area-formulario-boton">
                             <button type="submit" class="btn">Enviar</button>
@@ -94,7 +94,7 @@
         </div>
     </div>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/compra.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
