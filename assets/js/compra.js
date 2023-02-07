@@ -1,7 +1,8 @@
 const detalleCompra = document.querySelector('#detalleInput');
-var listaProductos = JSON.parse(localStorage.getItem('productos-en-carrito'));
-var textoCompra = '';
-var totalCompra = 0;
+const botonEnviar = document.querySelector('#boton-formulario-enviar');
+let listaProductos = JSON.parse(localStorage.getItem('productos-en-carrito'));
+let textoCompra = '';
+let totalCompra = 0;
 
 listaProductos.forEach(producto => {
     textoCompra += `
@@ -17,3 +18,14 @@ textoCompra += `\n    Total: Q${totalCompra.toFixed(2)}`;
 
 detalleCompra.value = textoCompra;
 
+botonEnviar.addEventListener('click', realizarCompra);
+
+function realizarCompra(){
+    Swal.fire(
+        '¡Tu compra está casi lista!',
+        'Espera un segundo...',
+        'success'
+    )
+    listaProductos.length = 0;
+    localStorage.setItem('productos-en-carrito', JSON.stringify(listaProductos));
+};
