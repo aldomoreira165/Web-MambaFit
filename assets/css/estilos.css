@@ -291,5 +291,94 @@ body{
     justify-content: center;
 }
 
+/*Estilo de pagina sobre nosotros*/
+#marca-container{
+    min-height: 100vh; 
+    background-image: url(../images/p2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-/*animaciones de elementos*/
+#area-imagen{
+    margin-top: 10px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+#area-imagen img{
+    height: 200px;
+}
+
+/*#quienes-somos-container #area-texto{
+    background-color: #E2CA1D;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quienes-somos-container #area-texto p{
+    font-size: 20px;
+}*/
+
+/*Animaciones*/
+
+#nombre-sitio a:hover{
+    color: #fff;
+}
+
+#main-container__link:hover{
+    color: #fff;
+}
+
+#iconos-redes a:hover{
+    color: #fff;
+}
+
+#iconos-redes a:active{
+    color: #C8C81E;
+}
+
+#carrito-container a:hover{
+    color: #fff;
+}
+
+#carrito-container a:active{
+    color: #C8C81E;
+}
+
+#btn-container a:hover{
+    color: #fff;
+}
+
+#btn-container a:active{
+    background-color: #C8C81E;
+}
+
+#cuerpo-eliminar-producto a:hover{
+    color: #951212;
+}
+
+#cuerpo-eliminar-producto:active{
+    background-color: #C8C81E;
+}
+
+#acciones-carrito-container a:hover{
+    color: #fff;
+}
+
+#boton-formulario-enviar:hover{
+    color: #fff;
+}
+
+#boton-formulario-enviar:active{
+    background-color: #C8C81E;
+}
+
+
+

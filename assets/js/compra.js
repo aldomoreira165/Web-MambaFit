@@ -7,7 +7,7 @@ let totalCompra = 0;
 
 //Obteniendo datos de los productos del carrito para redactar detalle de pedido
 listaProductos.forEach(producto => {
-    textoMensaje += `%0AProducto:%20${producto.nombre}%0ACantidad:%20${producto.cantidad}%0APrecio:%20${producto.precio}%0ASubtotal:%20Q${(producto.precio * producto.cantidad).toFixed(2)}%0A%0A`;
+    textoMensaje += `%0AProducto:%20${producto.nombre}%0ACantidad:%20${producto.cantidad}%0APrecio:%20Q${producto.precio}%0ASubtotal:%20Q${(producto.precio * producto.cantidad).toFixed(2)}%0A%0A`;
     
     textoCompra += `
     Producto: ${producto.nombre}
