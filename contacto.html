@@ -30,7 +30,7 @@
             <div id="menu-container" class="row">
               <nav id="menu-nav" class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Menú</a>
+                  <a class="navbar-brand">Menú</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,6 +52,32 @@
               </nav>
             </div>
           </div>
+          <div id="area-titulo-contacto" class="col-12">
+            <h1>Contáctanos</h1>
+          </div>
+          <div id="area-formulario" class="col-12">
+            <form>
+                <div class="mb-3">
+                    <label for="Nombre" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="nameInput" name="Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="emailInput" name="Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="Asunto" class="form-label">Asunto</label>
+                    <input type="tel" class="form-control" id="asuntoInput" name="Asunto" required>
+                </div>
+                <label for="Mensaje" class="form-label">Mensaje</label>
+                <div class="mb-3" id="area-detalle">
+                    <textarea name="Mensaje" id="mensajeInput" cols="30" rows="10" required></textarea>
+                </div>
+                <div id="area-formulario-boton">
+                  <button id="boton-formulario-enviar" type="submit" class="btn">Enviar</button>
+                </div>
+            </form>
+        </div>
         </div>
     </div>
     <script src="assets/js/bootstrap.min.js"></script>

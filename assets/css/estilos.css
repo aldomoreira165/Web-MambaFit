@@ -293,38 +293,51 @@ body{
 
 /*Estilo de pagina sobre nosotros*/
 #marca-container{
-    min-height: 100vh; 
-    background-image: url(../images/p2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#area-imagen{
-    margin-top: 10px;
-    width: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #000000;
+    min-height: 100vh;
+    padding: 50px;
 }
 
-#area-imagen img{
-    height: 200px;
-}
-
-/*#quienes-somos-container #area-texto{
-    background-color: #E2CA1D;
-    color: #000000;
-    text-align: center;
+#area-imagen-container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#quienes-somos-container #area-texto p{
-    font-size: 20px;
-}*/
+#portada-marca{
+    width: 300px;
+    height: 250px;
+}
+
+#area-texto-container{
+    padding: 15px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    border: 3px solid #E2CA1D;
+    border-radius: 10px;
+}
+
+#area-texto-container p{
+    color: #E2CA1D;
+    text-align: center;
+}
+
+/*estilos de pagina contacto*/
+
+#area-titulo-contacto{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#area-titulo-contacto h1{
+    text-align: center;
+    color: #000000;
+}
 
 /*Animaciones*/
 

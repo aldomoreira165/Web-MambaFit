@@ -68,11 +68,7 @@ function cargarProductos() {
                 <img id="imagen-producto" src="${producto.imagen}" class="card-img-top">
                 <div id="cuerpo-tarjeta" class="card-body">
                     <h5 class="card-title">${producto.nombre}</h5>
-                    <p id="texto-producto" class="card-text">${producto.detalle}</p>
                     <p id="texto-producto" class="card-text">Precio: Q${producto.precio}</p>
-                    <div id="btn-container">
-                        <a id="detalle-producto" class="btn">Detalle de producto</a>
-                    </div> 
                     <div id="btn-container">
                         <a id="${producto.id}" class="btn producto-agregar">Agregar al carrito de compras</a>
                     </div> 
