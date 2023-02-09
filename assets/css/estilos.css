@@ -280,6 +280,12 @@ body{
     width: 150px;
 }
 
+#area-formulario form button{
+    background-color: #E2CA1D;
+    color: #000000;
+    width: 150px;
+}
+
 #area-formulario-boton{
     display: flex;
     justify-content: center;
